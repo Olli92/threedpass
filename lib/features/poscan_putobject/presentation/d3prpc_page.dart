@@ -16,7 +16,7 @@ class D3PRPCPage extends StatelessWidget {
 
   @override
   Widget build(final BuildContext context) {
-    return const D3pScaffold(
+    return D3pScaffold(
       appbarTitle: 'upload_to_3d_rpc_title',
       body: SingleChildScrollView(
         child: Padding16(
@@ -24,13 +24,13 @@ class D3PRPCPage extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              ChooseFile(),
-              ChooseAccount(),
-              ChooseCategory(),
-              ChooseApprovals(),
-              ChooseHashes(),
+              const ChooseFile(),
+              const ChooseAccount(),
+              const ChooseCategory(),
+              const ChooseApprovals(),
+              const ChooseHashes(),
               ChooseProperties(),
-              PutObjectSubmitButton(),
+              const PutObjectSubmitButton(),
             ],
           ),
         ),
